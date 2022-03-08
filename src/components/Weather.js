@@ -33,11 +33,11 @@ const Weather = () => {
    
     const convertDegrees = () =>{
         if(isCelsius){
-            setActualDegree((actualDegree*1.8)+32);
+            setActualDegree(((actualDegree*1.8)+32).toFixed(2));
             setIsCelsius(false)
            
         }else{
-            setActualDegree((actualDegree-32)/1.8000);
+            setActualDegree(((actualDegree-32)/1.8000).toFixed(2));
             setIsCelsius(true)
         }
      }
